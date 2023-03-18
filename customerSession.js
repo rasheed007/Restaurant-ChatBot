@@ -1,4 +1,4 @@
-const Order = require("./Order");
+const Order = require("./order.js");
 
 const orderOptions = {
   2: "Noodles and Pasta",
@@ -23,7 +23,7 @@ const commandOptions = {
   0: "Cancel Order",
 };
 
-class CustomerSession {
+class customerSession {
   constructor({ io }) {
     this.customer = null;
     this.orders = [];
@@ -133,4 +133,4 @@ class CustomerSession {
   }
 }
 
-module.exports = CustomerSession;
+module.exports = customerSession;
