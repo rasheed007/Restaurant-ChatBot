@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="input-group">
-                <input class="chat-input" placeholder="Type in a command..."/> 
+                <input class="chat-input" placeholder="Key in an Input..."/> 
                 <button class="sendButton">Send</button>
             </div>
         </form>
@@ -101,7 +101,7 @@
             createUserMessage();
             if (!["1","99","98", "97", "0", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"].includes(chat_input.value)){
                 createChatboxMessage("This Input is Invalid.");
-                createChatboxMessage(`These are the possible commands:
+                createChatboxMessage(`These are the possible Inputs:
                 0- Cancel Order
                 1- Place an Order
                 97- View Current Order
@@ -136,7 +136,7 @@
     
     window.addEventListener('load', (e) => {
          createChatboxMessage("Welcome to Altschool Africa Restaurant!")
-         setTimeout(() =>createChatboxMessage(`These are the possible commands: <br />
+         setTimeout(() =>createChatboxMessage(`These are the possible Inputs: <br />
             0 - Cancel Order <br />
             1 - Place an Order <br />
             97 - See Current Order <br />
